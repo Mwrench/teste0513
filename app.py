@@ -6,5 +6,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Mateus Quintela'
 
+@app.route('/index.html')
+def index():
+    return 'index.html'
+
 if __name__== '__main__':
     app.run()
